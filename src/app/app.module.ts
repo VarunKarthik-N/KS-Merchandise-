@@ -1,19 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_BOOTSTRAP_LISTENER } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { FestComponent } from './fest/fest.component'
+import { FestComponent } from './fest/fest.component';
+import { TopHeader } from './top/top.component';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FestComponent
+    FestComponent,
+    TopHeader
   ],
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
